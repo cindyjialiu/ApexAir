@@ -43,6 +43,11 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
         }
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        for currentLocation in locations{
+            print("\(currentLocation.coordinate)")
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
