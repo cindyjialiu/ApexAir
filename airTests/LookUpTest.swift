@@ -30,4 +30,9 @@ class LookUpTest: XCTestCase {
         let result = getIndex(find: 10 , arr: [11,12,13])
         XCTAssertEqual(result, 0)
     }
+    
+    func testGetLength() {
+        let result = getIndex(find: 14 , arr: [11,12,13])
+        XCTAssertEqual(result, 2)
+    }
 }
