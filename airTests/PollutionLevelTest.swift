@@ -26,8 +26,4 @@ class PollutionLevel: XCTestCase {
         XCTAssertEqual(result, 205)
     }
     
-    func 
-    
-    
-    
 }
