@@ -1,15 +1,15 @@
 //
-//  LookUpTest.swift
+//  PollutionLevel.swift
 //  airTests
 //
-//  Created by Jia Liu on 03/05/2018.
+//  Created by Reena Koudi on 04/05/2018.
 //  Copyright © 2018 Jia Liu. All rights reserved.
 //
 
 import XCTest
 @testable import air
 
-class LookUpTest: XCTestCase {
+class PollutionLevel: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,19 +21,9 @@ class LookUpTest: XCTestCase {
         super.tearDown()
     }
     
-    func testGetIndex() {
-        let result = getIndex(find: 12.7 , arr: [11,12,13])
-        XCTAssertEqual(result, 2)
-    }
-    
-    func testGetIndexZero() {
-        let result = getIndex(find: 10 , arr: [11,12,13])
-        XCTAssertEqual(result, 0)
-    }
-    
-    func testGetLength() {
-        let result = getIndex(find: 14 , arr: [11,12,13])
-        XCTAssertEqual(result, 2)
+    func testgetIndexOfConcern() {
+        let result = getIndexOfConcern(findX: 5, findY: 10, rowWidth: 20)
+        XCTAssertEqual(result, 205)
     }
     
 }
