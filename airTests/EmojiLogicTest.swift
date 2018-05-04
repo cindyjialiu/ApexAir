@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import air
 
 class EmojiLogicTest: XCTestCase {
     
@@ -20,13 +21,9 @@ class EmojiLogicTest: XCTestCase {
         super.tearDown()
     }
     
-    func getEmoji() {
-        
-    }
-    
-    func testgetIndexOfConcern() {
-        let result = getIndexOfConcern(findX: 5, findY: 10, rowWidth: 20)
-        XCTAssertEqual(result, 205)
+    func testGetEmoji() {
+        let result = getEmoji(value: 18)
+        XCTAssertEqual(result, "😀")
     }
     
 }
