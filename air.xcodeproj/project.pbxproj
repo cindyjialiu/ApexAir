@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		329AD8E5209C6E6D00010807 /* PollutionLevelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329AD8E4209C6E6D00010807 /* PollutionLevelTest.swift */; };
 		329AD8E7209C6FD800010807 /* PollutionLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329AD8E6209C6FD800010807 /* PollutionLevel.swift */; };
+		329AD8E9209C76E900010807 /* GetPollutionLevelFromLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329AD8E8209C76E900010807 /* GetPollutionLevelFromLocation.swift */; };
 		3769D97E209BC6F100B021A2 /* LookUpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769D97D209BC6F100B021A2 /* LookUpTest.swift */; };
 		3769D980209BC75300B021A2 /* LookUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769D97F209BC75300B021A2 /* LookUp.swift */; };
 		3769D982209C74BC00B021A2 /* coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769D981209C74BC00B021A2 /* coordinates.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		329AD8E4209C6E6D00010807 /* PollutionLevelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionLevelTest.swift; sourceTree = "<group>"; };
 		329AD8E6209C6FD800010807 /* PollutionLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionLevel.swift; sourceTree = "<group>"; };
+		329AD8E8209C76E900010807 /* GetPollutionLevelFromLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPollutionLevelFromLocation.swift; sourceTree = "<group>"; };
 		3769D97D209BC6F100B021A2 /* LookUpTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpTest.swift; sourceTree = "<group>"; };
 		3769D97F209BC75300B021A2 /* LookUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUp.swift; sourceTree = "<group>"; };
 		3769D981209C74BC00B021A2 /* coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coordinates.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				329AD8E6209C6FD800010807 /* PollutionLevel.swift */,
 				3769D981209C74BC00B021A2 /* coordinates.swift */,
 				3769D983209C74F000B021A2 /* concern.swift */,
+				329AD8E8209C76E900010807 /* GetPollutionLevelFromLocation.swift */,
 			);
 			path = air;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				329AD8E7209C6FD800010807 /* PollutionLevel.swift in Sources */,
+				329AD8E9209C76E900010807 /* GetPollutionLevelFromLocation.swift in Sources */,
 				3769D984209C74F000B021A2 /* concern.swift in Sources */,
 				376C42F2209B7E2D00F42DFA /* ViewController.swift in Sources */,
 				3769D980209BC75300B021A2 /* LookUp.swift in Sources */,
