@@ -22,8 +22,18 @@ class EmojiLogicTest: XCTestCase {
     }
     
     func testGetEmoji() {
-        let result = getEmoji(value: 18)
+        let result = getEmoji(value: 17.78)
         XCTAssertEqual(result, "😀")
+    }
+    
+    func testGetEmojiForRangeSix() {
+        let result = getEmoji(value: 22.78)
+        XCTAssertEqual(result, "🤬")
+    }
+    
+    func testGetEmojiForNotInRange() {
+        let result = getEmoji(value: 25.98)
+        XCTAssertEqual(result, "😈")
     }
     
 }
