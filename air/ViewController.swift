@@ -45,7 +45,8 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         for currentLocation in locations{
-            print("\(currentLocation.coordinate)")
+            let pollutionLevel = getConcern(lon: currentLocation.coordinate.longitude, lat: currentLocation.coordinate.latitude)
+            print("\(pollutionLevel)","\(currentLocation.coordinate)")
         }
     }
     override func viewWillAppear(_ animated: Bool) {
