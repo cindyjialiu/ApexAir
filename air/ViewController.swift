@@ -43,13 +43,17 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    private func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) -> CLLocation {
         for currentLocation in locations{
             let pollutionLevel = getConcern(lon: currentLocation.coordinate.longitude, lat: currentLocation.coordinate.latitude)
             let result = getEmoji(value: pollutionLevel)
             print("\(pollutionLevel)","\(result)","\(currentLocation.coordinate)")
-        }
+            
+            }
+        return locations.first!
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -77,7 +81,7 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "")
+        let labelNode = SKLabelNode(text: "💀")
         labelNode.horizontalAlignmentMode = .center
         labelNode.verticalAlignmentMode = .center
         return labelNode;

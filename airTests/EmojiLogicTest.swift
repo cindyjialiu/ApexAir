@@ -21,9 +21,29 @@ class EmojiLogicTest: XCTestCase {
         super.tearDown()
     }
     
-    func testGetEmoji() {
+    func testGetEmojiForRangeOne() {
         let result = getEmoji(value: 17.78)
         XCTAssertEqual(result, "😀")
+    }
+    
+    func testGetEmojiForRangeTwo() {
+        let result = getEmoji(value: 18.78)
+        XCTAssertEqual(result, "😎")
+    }
+    
+    func testGetEmojiForRangeThree() {
+        let result = getEmoji(value: 19.78)
+        XCTAssertEqual(result, "😣")
+    }
+    
+    func testGetEmojiForRangeFour() {
+        let result = getEmoji(value: 20.78)
+        XCTAssertEqual(result, "😓")
+    }
+    
+    func testGetEmojiForRangeFive() {
+        let result = getEmoji(value: 21.78)
+        XCTAssertEqual(result, "😨")
     }
     
     func testGetEmojiForRangeSix() {
@@ -31,9 +51,14 @@ class EmojiLogicTest: XCTestCase {
         XCTAssertEqual(result, "🤬")
     }
     
+    
+    func testGetEmojiForRangeSeven() {
+        let result = getEmoji(value: 23.78)
+        XCTAssertEqual(result, "👹")
+    }
+    
     func testGetEmojiForNotInRange() {
         let result = getEmoji(value: 25.98)
         XCTAssertEqual(result, "😈")
     }
-    
 }
