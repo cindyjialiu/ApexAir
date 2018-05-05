@@ -43,14 +43,13 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
         }
     }
     
-    private func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) -> CLLocation {
+   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         for currentLocation in locations{
             let pollutionLevel = getConcern(lon: currentLocation.coordinate.longitude, lat: currentLocation.coordinate.latitude)
             let result = getEmoji(value: pollutionLevel)
             print("\(pollutionLevel)","\(result)","\(currentLocation.coordinate)")
             
             }
-        return locations.first!
     }
     
     
