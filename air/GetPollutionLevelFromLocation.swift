@@ -16,3 +16,4 @@ func getConcern(lon: Double, lat: Double) -> Double {
 }
 
 
+
