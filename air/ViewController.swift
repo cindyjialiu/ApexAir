@@ -80,10 +80,15 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "💀")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode;
+//        let labelNode = SKLabelNode(text: "💀")
+//        labelNode.horizontalAlignmentMode = .center
+//        labelNode.verticalAlignmentMode = .center
+//        return labelNode;
+        let winner = SKLabelNode(fontNamed: "Chalkduster")
+        winner.text = "You Win!"
+        winner.fontSize = 30
+        winner.fontColor = SKColor.green
+        return winner
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
