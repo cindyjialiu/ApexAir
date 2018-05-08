@@ -15,7 +15,7 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     
     var scene: Scene?
     
-//    var emoji = ""
+    var emoji = ""
     
     @IBOutlet var sceneView: ARSKView!
     
@@ -50,8 +50,8 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
         for currentLocation in locations{
             let pollutionLevel = getConcen(lon: currentLocation.coordinate.longitude, lat: currentLocation.coordinate.latitude)
             let result = getEmoji(value: pollutionLevel)
-//            emoji = result
-//            scene!.showEmoji()
+            emoji = result
+            scene!.showEmoji()
             print("\(pollutionLevel)","\(result)","\(currentLocation.coordinate)")
             
             }
