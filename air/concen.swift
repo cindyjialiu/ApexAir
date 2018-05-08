@@ -7,8 +7,8 @@
 //
 
 import Foundation
-class Concern {
-    var concern = [19.79009,
+class Concen {
+    var concen = [19.79009,
                   19.82124,
                   20.9884,
                   19.54838,

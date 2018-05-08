@@ -21,8 +21,8 @@ class PollutionLevel: XCTestCase {
         super.tearDown()
     }
     
-    func testgetIndexOfConcern() {
-        let result = getIndexOfConcern(findX: 5, findY: 10, rowWidth: 20)
+    func testgetIndexOfConcen() {
+        let result = getIndexOfConcen(findX: 5, findY: 10, rowWidth: 20)
         XCTAssertEqual(result, 205)
     }
     
