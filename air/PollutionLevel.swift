@@ -8,7 +8,7 @@
 
 import Foundation
 
-func getIndexOfConcern(findX: Int, findY: Int, rowWidth: Int) -> Int {
+func getIndexOfConcen(findX: Int, findY: Int, rowWidth: Int) -> Int {
     return (rowWidth * findY) + findX
 }
 

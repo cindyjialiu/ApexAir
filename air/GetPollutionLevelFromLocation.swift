@@ -8,11 +8,11 @@
 
 import Foundation
 
-func getConcern(lon: Double, lat: Double) -> Double {
+func getConcen(lon: Double, lat: Double) -> Double {
     let x = getIndex(find: lon, arr: Coordinates().x)
     let y = getIndex(find: lat, arr: Coordinates().y)
-    let index = getIndexOfConcern(findX: x, findY: y, rowWidth: 50)
-    return Concern().concern[index]
+    let index = getIndexOfConcen(findX: x, findY: y, rowWidth: 50)
+    return Concen().concen[index]
 }
 
 
