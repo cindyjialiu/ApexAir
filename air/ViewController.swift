@@ -32,7 +32,7 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
         
         locationManager.stopUpdatingHeading()
         
-        locationManager.distanceFilter = 20
+//        locationManager.distanceFilter = 20
         
         // Set the view's delegate
         sceneView.delegate = self

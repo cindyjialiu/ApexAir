@@ -12,11 +12,11 @@ import ARKit
 class Scene: SKScene {
     
     func showEmoji() {
-//        print("before guard")
+        print("before guard")
         guard let sceneView = self.view as? ARSKView else {
             return
         }
-//        print("after guard")
+        print("after guard")
         
         // Create anchor using the camera's current position
         if let currentFrame = sceneView.session.currentFrame {
