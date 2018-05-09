@@ -11,19 +11,19 @@ import Foundation
 
 func getEmoji(value: Double) -> String {
     if (value >= 17.0 && value <= 19.0) {
-        return "😀"
+        return "😀 Very Good"
     }
     else if (value >= 19.1 && value <= 21.0) {
-        return "😎"
+        return "😎 Good"
     }
     else if (value >= 21.1 && value <= 23.1) {
-        return "🙂"
+        return "🙂 Moderate"
     }
     else if (value >= 23.1 && value <= 24.0) {
-        return "😷"
+        return "😷 Poor"
     }
     else{
-        return "🤮"
+        return "🤮 Very Poor"
     }
     
 }
