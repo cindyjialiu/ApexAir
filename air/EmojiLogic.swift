@@ -9,23 +9,28 @@
 import Foundation
 
 
+//func getEmoji(value: Double) -> String {
+//    if (value >= 17.0 && value <= 17.5) {
+//        return "😀 Very Good"
+//    }
+//    else if (value >= 17.51 && value <= 18.0) {
+//        return "😎 Good"
+//    }
+//    else if (value >= 18.1 && value <= 19.0) {
+//        return "🙂 Moderate"
+//    }
+//    else if (value >= 19.1 && value <= 20.0) {
+//        return "😷 Poor"
+//    }
+//    else {
+//        return "🤮 Very Poor"
+//    }
+//}
+
 func getEmoji(value: Double) -> String {
-    if (value >= 17.0 && value <= 19.0) {
-        return "😀 Very Good"
-    }
-    else if (value >= 19.1 && value <= 21.0) {
-        return "😎 Good"
-    }
-    else if (value >= 21.1 && value <= 22.0) {
-        return "🙂 Moderate"
-    }
-    else if (value >= 22.1 && value <= 23.0) {
-        return "😷 Poor"
-    }
-    else {
-        return "🤮 Very Poor"
-    }
+    let emojiArr = ["😀 Very Good", "😎 Good", "🙂 Moderate", "😷 Poor", "🤮 Very Poor"]
+    let pollutionRange = [40.0, 49.0, 55.0, 61.0, 80.0]
+    let index = getIndex(find: value, arr: pollutionRange)
+    return emojiArr[index]
+
 }
-
-
-

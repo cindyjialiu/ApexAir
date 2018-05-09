@@ -8,5 +8,6 @@
 
 import Foundation
 func getIndex(find: Double, arr: Array<Double>) -> Int {
-    return arr.index(where: { $0 >= find }) != nil ? arr.index(where: { $0 > find })! : arr.count - 1
+    let index = arr.index(where: { $0 >= find })
+    return index != nil ? index! : arr.count - 1
 }

@@ -9,10 +9,15 @@
 import Foundation
 
 func getConcen(lon: Double, lat: Double) -> Double {
-    let x = getIndex(find: lon, arr: Coordinates().x)
-    let y = getIndex(find: lat, arr: Coordinates().y)
+    let x = getIndex(find: lon - Coordinates().gridOffsetX, arr: Coordinates().x)
+    print("\(x)")
+    let y = getIndex(find: lat - Coordinates().gridOffsetY, arr: Coordinates().y)
+    print("\(y)")
     let index = getIndexOfConcen(findX: x, findY: y, rowWidth: 50)
-    return Concen().concen[index]
+    print("\(index)")
+    let result = Concen().concen[index]
+    print("\(result)")
+    return result
 }
 
 
