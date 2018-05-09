@@ -13,6 +13,10 @@ import CoreLocation
 
 class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDelegate {
     
+    var scene: Scene?
+    
+    var emoji = ""
+    
     @IBOutlet var sceneView: ARSKView!
     
     let locationManager = CLLocationManager()
@@ -28,7 +32,7 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
         
         locationManager.stopUpdatingHeading()
         
-        locationManager.distanceFilter = 20
+//        locationManager.distanceFilter = 20
         
         // Set the view's delegate
         sceneView.delegate = self
@@ -38,15 +42,16 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
         sceneView.showsNodeCount = true
         
         // Load the SKScene from 'Scene.sks'
-        if let scene = SKScene(fileNamed: "Scene") {
+        scene = SKScene(fileNamed: "Scene") as? Scene
             sceneView.presentScene(scene)
-        }
     }
     
    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         for currentLocation in locations{
             let pollutionLevel = getConcen(lon: currentLocation.coordinate.longitude, lat: currentLocation.coordinate.latitude)
             let result = getEmoji(value: pollutionLevel)
+            emoji = result
+            scene!.showEmoji()
             print("\(pollutionLevel)","\(result)","\(currentLocation.coordinate)")
             
             }
@@ -80,7 +85,8 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "😎 GOOD")
+        print("before showing", "\(emoji)")
+        let labelNode = SKLabelNode(text: emoji)
         labelNode.horizontalAlignmentMode = .center
         labelNode.verticalAlignmentMode = .center
         return labelNode;
