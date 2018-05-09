@@ -23,6 +23,12 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationItem.title = "Title text"
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "image1")
+        imageView.image = image
+        navigationItem.titleView = imageView
         
         locationManager.delegate = self
         
