@@ -32,7 +32,7 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
         
         locationManager.stopUpdatingHeading()
         
-        locationManager.distanceFilter = 13
+        locationManager.distanceFilter = 10
         
         // Set the view's delegate
         sceneView.delegate = self
@@ -86,9 +86,9 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
         print("before showing", "\(emoji)")
-        let labelNode = SKLabelNode(fontNamed: "Chalkduster")
+        let labelNode = SKLabelNode(fontNamed: "Noteworthy-Bold")
         labelNode.text = emoji
-        labelNode.fontSize = 15
+        labelNode.fontSize = 20
         labelNode.fontColor = SKColor.yellow
         labelNode.horizontalAlignmentMode = .center
         labelNode.verticalAlignmentMode = .center
