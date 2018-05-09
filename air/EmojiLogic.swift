@@ -16,16 +16,15 @@ func getEmoji(value: Double) -> String {
     else if (value >= 19.1 && value <= 21.0) {
         return "😎 Good"
     }
-    else if (value >= 21.1 && value <= 23.1) {
+    else if (value >= 21.1 && value <= 22.0) {
         return "🙂 Moderate"
     }
-    else if (value >= 23.1 && value <= 24.0) {
+    else if (value >= 22.1 && value <= 23.0) {
         return "😷 Poor"
     }
-    else{
+    else {
         return "🤮 Very Poor"
     }
-    
 }
 
 
