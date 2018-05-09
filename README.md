@@ -19,8 +19,10 @@ This is the final project for weeks 11-12 at Makers Academy. ApexAir is an augme
 
 
 ## Technologies Used
-- language Swift
-- Testing framework XCTest
+##### Language  
+Swift
+#### Testing framework  
+XCTest
 
 <!-- Add Screen shot for test coverage-->
 
@@ -29,6 +31,9 @@ This is the final project for weeks 11-12 at Makers Academy. ApexAir is an augme
 ## User Stories
 
 ## Diagrams
+
+![untitled diagram](https://user-images.githubusercontent.com/34460965/39825271-511ab02a-53a9-11e8-8e17-7af44b5cd3e5.jpg)
+
 
 <!-- ## Deployment and Database
 The cloud-hosted database for this project is Firebase.  -->
