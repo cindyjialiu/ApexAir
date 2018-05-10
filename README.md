@@ -1,4 +1,7 @@
-# ApexAir
+# ApexAir  
+
+<img width="418" alt="screen shot 2018-05-10 at 17 17 57" src="https://user-images.githubusercontent.com/34460965/39880763-a02c51b4-5476-11e8-8c16-4598ddbd6356.png">
+
 
 This is the final project for weeks 11-12 at Makers Academy. ApexAir is an augmented reality app that displays air pollution levels with 2D emojis. The ApexAir team consists of  
  [Reena Koudi](https://github.com/Reenakoudi),  
@@ -28,7 +31,6 @@ XCTest
 
 <!-- Add App Screen shot-->
 
-## User Stories
 
 ## Diagrams
 
