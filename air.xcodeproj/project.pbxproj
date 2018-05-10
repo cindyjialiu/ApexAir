@@ -25,6 +25,7 @@
 		376C42FA209B7E2D00F42DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376C42F8209B7E2D00F42DFA /* LaunchScreen.storyboard */; };
 		376C4305209B7E2E00F42DFA /* airTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C4304209B7E2E00F42DFA /* airTests.swift */; };
 		376C4310209B7E2E00F42DFA /* airUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C430F209B7E2E00F42DFA /* airUITests.swift */; };
+		F312BCB120A4AC82004F4704 /* GetPollutionLevelFromLocationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F312BCB020A4AC82004F4704 /* GetPollutionLevelFromLocationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		376C430B209B7E2E00F42DFA /* airUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = airUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		376C430F209B7E2E00F42DFA /* airUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airUITests.swift; sourceTree = "<group>"; };
 		376C4311209B7E2E00F42DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F312BCB020A4AC82004F4704 /* GetPollutionLevelFromLocationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPollutionLevelFromLocationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				3769D97D209BC6F100B021A2 /* LookUpTest.swift */,
 				329AD8E4209C6E6D00010807 /* PollutionLevelTest.swift */,
 				329AD8EC209C87C000010807 /* EmojiLogicTest.swift */,
+				F312BCB020A4AC82004F4704 /* GetPollutionLevelFromLocationTest.swift */,
 			);
 			path = airTests;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				376C4305209B7E2E00F42DFA /* airTests.swift in Sources */,
+				F312BCB120A4AC82004F4704 /* GetPollutionLevelFromLocationTest.swift in Sources */,
 				329AD8ED209C87C000010807 /* EmojiLogicTest.swift in Sources */,
 				329AD8E5209C6E6D00010807 /* PollutionLevelTest.swift in Sources */,
 				3769D97E209BC6F100B021A2 /* LookUpTest.swift in Sources */,

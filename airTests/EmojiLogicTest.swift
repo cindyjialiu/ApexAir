@@ -22,43 +22,27 @@ class EmojiLogicTest: XCTestCase {
     }
     
     func testGetEmojiForRangeOne() {
-        let result = getEmoji(value: 17.78)
-        XCTAssertEqual(result, "😀")
+        let result = getEmoji(value: 50.00)
+        XCTAssertEqual(result, "😀 Very Good")
     }
     
     func testGetEmojiForRangeTwo() {
-        let result = getEmoji(value: 18.78)
-        XCTAssertEqual(result, "😎")
+        let result = getEmoji(value: 55.00)
+        XCTAssertEqual(result, "😎 Good")
     }
     
     func testGetEmojiForRangeThree() {
-        let result = getEmoji(value: 19.78)
-        XCTAssertEqual(result, "😣")
+        let result = getEmoji(value: 61.00)
+        XCTAssertEqual(result, "🙂 Moderate")
     }
     
     func testGetEmojiForRangeFour() {
-        let result = getEmoji(value: 20.78)
-        XCTAssertEqual(result, "😓")
+        let result = getEmoji(value: 70.00)
+        XCTAssertEqual(result, "😷 Poor")
     }
     
     func testGetEmojiForRangeFive() {
-        let result = getEmoji(value: 21.78)
-        XCTAssertEqual(result, "😨")
-    }
-    
-    func testGetEmojiForRangeSix() {
-        let result = getEmoji(value: 22.78)
-        XCTAssertEqual(result, "🤬")
-    }
-    
-    
-    func testGetEmojiForRangeSeven() {
-        let result = getEmoji(value: 23.78)
-        XCTAssertEqual(result, "👹")
-    }
-    
-    func testGetEmojiForNotInRange() {
-        let result = getEmoji(value: 25.98)
-        XCTAssertEqual(result, "😈")
+        let result = getEmoji(value: 80.00)
+        XCTAssertEqual(result, "🤮 Very Poor")
     }
 }
