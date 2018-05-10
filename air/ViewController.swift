@@ -24,6 +24,20 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 50))
+//        imageView.contentMode = .scaleAspectFit
+//        let image = UIImage(named: "emoji")
+//        imageView.image = image
+//        navigationItem.titleView = imageView
+        
+//        navigationController?.navigationBar.prefersLargeTitles = true
+
+        
+        let customButton = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 50))
+        customButton.setImage(UIImage.init(named:"emoji"), for: .normal)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: customButton)
+
+        
         locationManager.delegate = self
         
         locationManager.requestAlwaysAuthorization()
