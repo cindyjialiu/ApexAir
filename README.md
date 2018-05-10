@@ -22,7 +22,7 @@ This is the final project for weeks 11-12 at Makers Academy. ApexAir is an augme
 
 
 ## Technologies Used
-##### Language  
+#### Language  
 Swift
 #### Testing framework  
 XCTest
@@ -35,6 +35,9 @@ XCTest
 ## Diagrams
 
 <img width="542" alt="screen shot 2018-05-09 at 17 07 14" src="https://user-images.githubusercontent.com/34460965/39826093-80928eac-53ab-11e8-9b5b-4cad0d4e6870.png">
+
+#### Emoji Logic
+![alt text](https://github.com/cindyjialiu/ApexAir/blob/master/EmojiLogic.jpg)
 
 
 <!-- ## Deployment and Database
