@@ -30,12 +30,13 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
 //        imageView.image = image
 //        navigationItem.titleView = imageView
         
+//        navigationController?.navigationBar.prefersLargeTitles = true
+
+        
         let customButton = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 50))
-        customButton.setImage(UIImage.init(named:"emojii"), for: .normal)
+        customButton.setImage(UIImage.init(named:"emoji"), for: .normal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: customButton)
 
-//         navigationController?.navigationBar.prefersLargeTitles = true
-        
         
         locationManager.delegate = self
         
