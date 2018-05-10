@@ -23,12 +23,19 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navigationItem.title = "Title text"
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
-        imageView.contentMode = .scaleAspectFit
-        let image = UIImage(named: "image1")
-        imageView.image = image
-        navigationItem.titleView = imageView
+        
+//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 50))
+//        imageView.contentMode = .scaleAspectFit
+//        let image = UIImage(named: "emoji")
+//        imageView.image = image
+//        navigationItem.titleView = imageView
+        
+        let customButton = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 50))
+        customButton.setImage(UIImage.init(named:"emojii"), for: .normal)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: customButton)
+
+//         navigationController?.navigationBar.prefersLargeTitles = true
+        
         
         locationManager.delegate = self
         
