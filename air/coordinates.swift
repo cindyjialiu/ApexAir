@@ -8,6 +8,9 @@
 
 import Foundation
 class Coordinates {
+    //  The current logic takes the parameter and always return the index of the rounded value, in some cases, the value before might be closer to the value after, as the distance of 2 points are 20m
+    let gridOffsetX = 0.00000875 * 10
+    let gridOffsetY = 0.00001478265306 * 10
     var x = [-0.08478,
              -0.08448436735,
              -0.08418873469,
